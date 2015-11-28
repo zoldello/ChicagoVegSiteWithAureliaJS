@@ -1,0 +1,72 @@
+{
+  "name": "chicagovegwebsite",
+  "version": "0.0.1",
+  "description": "Primary website of ChicagoVeg",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChicagoVeg/ChicagoVegSite.git"
+  },
+  "keywords": [
+    "ChicagoVeg",
+    "Chicago Veg",
+    "Vegetarian",
+    "Vegan",
+    "Raw Food",
+    "Chicago",
+    "Veg",
+    "Veggie",
+    "Vegetarian organization",
+    "Vegan",
+    "Raw Foodists",
+    "Vegetarians in Chicago",
+    "Animal Lover",
+    "Conscious Living",
+    "Save Planet",
+    "Solve Environmental Issues",
+    "Chicagoland",
+    "Chicago area",
+    "Chicago suburbs",
+    "Vegs",
+    "Veggies",
+    "Vegetarians",
+    "Vegans",
+    "Raw Foodists",
+    "Animal Welfare",
+    "Personal Health",
+    "Alternative Healing",
+    "Harmony in Life",
+    "Community",
+    "organic",
+    "IL",
+    "illinois",
+    "people who care",
+    "healthy",
+    "veganism",
+    "website",
+    "html",
+    "code"
+  ],
+  "author": "Phil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChicagoVeg/ChicagoVegSite/issues"
+  },
+  "homepage": "https://github.com/ChicagoVeg/ChicagoVegSite#readme",
+  "jspm": {
+    "dependencies": {
+      "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0-beta.1",
+      "aurelia-framework": "npm:aurelia-framework@^1.0.0-beta.1.0.2",
+      "jquery": "github:components/jquery@^2.1.4",
+      "twbs": "npm:twbs@^0.0.6"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}
