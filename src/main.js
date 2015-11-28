@@ -3,6 +3,5 @@ export function configure(aurelia) {
     .standardConfiguration()
     .developmentLogging();
 
-
   aurelia.start().then(a => a.setRoot('./src/chicagoVeg'));
 }

@@ -1,0 +1,34 @@
+body {
+	padding-top: 50px;  /* twitter bootstrap nav requires this so as to not overlay content*/
+	/*background-color: #1DA06A; */ 
+	/*background-image: url('http://chicagoveg.com/images/green_bg.jpg'); */
+	font-family: arial;
+}
+
+.appContainer {
+	width: 90%;
+}
+
+.header-text { 
+	margin-top: 10px;
+}
+
+.brand {
+	margin-top: -12px;
+	height: 45px;
+	width: 120px;
+}
+
+menuOption {
+	margin-top: 5%;
+	padding-left:5%;
+	padding-right:5%
+
+}
+
+
+menuOption a {
+	font-weight: bolder;
+	font-size: 1.2em;
+	color: Black;
+}

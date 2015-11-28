@@ -1,6 +1,46 @@
-<template>
-	
+<template>	
+	 <header>
+        <!-- Do not delete. This is used for hosting data source and providing facebook with an image  -->
+        <div>
+            <img src="./../../images/ChicagoVeg.jpg" width="1" height="1" alt="information link image">
+        </div>
 
-	Hello, world;
-		
+        <!-- This is always collapsed via a CSS hack () -->
+        <nav class="navbar navbar-default navbar-fixed-top menuOptions">
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div>
+                    <a href="../../index.html" class="navbar-brand pull-left">
+                        <img class="brand" src="./../../images/ChicagoVeg.jpg" alt="ChicagoVeg Restaurants" title ="ChicagoVeg Restaurants" width="90" height="55" />
+                    </a>
+                </div>      
+                <!--        
+                <div class="text-center  bolder mbm header-text">
+                    <h2 class="visible-sm-inline visible-md-inline visible-lg-inline">
+                        Chicagoland Vegetarian, Vegan and Raw Restaurants 
+                    </h2>
+                </div>
+            -->
+
+            </div>
+            <div id="navbarCollapse" class="collapse navbar-collapse nav-listing">
+                <ul class="nav navbar-nav navbar-right">
+                 
+                    <li repeat.for="row of router.navigation">
+                        <a href.bind="row.href">
+                            ${row.title}
+                        </a>
+                    </li>               
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <br class="visible-xs-block" />
+
+	<router-view></router-view> 
 </template>
