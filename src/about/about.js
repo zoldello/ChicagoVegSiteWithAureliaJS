@@ -1,3 +1,3 @@
-export class Abouts {
+export class About {
 	
 }
