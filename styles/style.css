@@ -1,12 +1,23 @@
 body {
-	padding-top: 50px;  /* twitter bootstrap nav requires this so as to not overlay content*/
-	/*background-color: #1DA06A; */ 
-	/*background-image: url('http://chicagoveg.com/images/green_bg.jpg'); */
-	font-family: arial;
+	padding: 0 5% 5% 5%;  
+	font-family: verdana, arial,sans-serif;
+	background-color: #1adb00;
+}
+
+.body-content {
+	margin: 2% 1% 1% 1%;
+	background-color: #e4ffe0;
+	padding: 2%;
 }
 
 .appContainer {
 	width: 90%;
+}
+
+.centering {
+	 margin-left: auto;
+    margin-right: auto;
+    width: 25em;
 }
 
 .header-text { 
@@ -19,18 +30,15 @@ body {
 	width: 120px;
 }
 
-menuOption {
-	margin-top: 5%;
-	padding-left:5%;
-	padding-right:5%
-
+.menuOptions {
+	padding-right:5%;
+	background-color: #1adb00;
 }
 
-
-menuOption a {
-	font-weight: bolder;
+.menuOptions a {
+	font-weight: 900;
 	font-size: 1.2em;
-	color: Black;
+	color: Black !important;
 }
 
 .statementContainer {

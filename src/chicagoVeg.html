@@ -1,39 +1,34 @@
 <template>	  
     <require from="./nav-bar/nav-bar"> </require>
     <header>
-        <!-- Do not delete. This is used for hosting data source and providing facebook with an image  -->
+        <!-- Do not delete. This is used for providing facebook with an image  -->
         <div>
-            <img src="./../../images/ChicagoVeg.jpg" width="1" height="1" alt="information link image">
+            <img src="./../images/ChicagoVeg.jpg" width="1" height="1" alt="information link image">
         </div>
     </header>
-
     <nav-bar router.bind="router"></nav-bar>
-<!--
-<compose view-model="./nav-bar/nav-bar" router.bind="router"></compose>
--->
-
-<div class="text-center  bolder header-text">
-    <h2>
-       ChicagoVeg
-   </h2>
-   For Earth ~ For Animals ~ For You
-</div>
-
-<section>
-   <router-view></router-view> 
-   <compose view-model="./statementBoxes/statementboxes"></compose>
-   <div>
-    <div class="pull-left">
-        <compose view-model="./message/message"></compose>
+    <section class="body-content">
+        <div class="text-center  bolder header-text" style="display:none;">
+            <h2>
+             ChicagoVeg
+         </h2>
+         For Earth ~ For Animals ~ For You
+     </div>
+      <div class="tab-content">
+     <router-view></router-view>
+     </div> 
+     <compose view-model="./statementBoxes/statementboxes"></compose>
+     <div>
+        <div class="pull-left">
+            <compose view-model="./message/message"></compose>
+        </div>
+        <div class="pull-right">
+            <compose view-model="./upcomingEvents/upcomingEvents"></compose>
+        </div>
+        <div class="clearfix"></div>
     </div>
-    <div class="pull-right">
-        <compose view-model="./upcomingEvents/upcomingEvents"></compose>
-    </div>
-    <div class="clearfix"></div>
-</div>
-
-<section>
-    <footer>
-        <compose view-model="./footer/footer"></compose>
-    </footer>
+</section>
+<footer>
+    <compose view-model="./footer/footer"></compose>
+</footer>
 </template>
