@@ -11,6 +11,19 @@ body {
 	border-radius: 30px;
 }
 
+/* overrides twbs nav active tab background color */
+.nav .active a { 
+	background:#71BC78 !important; 
+	border-radius: 10px;
+} 
+
+/* overrides twbs nav li background */
+.nav li { 
+	background:lime !important; 
+	border-radius: 10px; 
+	margin: 3px;
+} 
+
 .appContainer {
 	width: 90%;
 }
