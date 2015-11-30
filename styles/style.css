@@ -8,6 +8,7 @@ body {
 	margin: 2% 1% 1% 1%;
 	background-color: #e4ffe0;
 	padding: 2%;
+	border-radius: 30px;
 }
 
 .appContainer {
@@ -32,7 +33,8 @@ body {
 
 .menuOptions {
 	padding-right:5%;
-	background-color: #1adb00;
+	background-color: #1adb00; 
+	border-radius: 15px;
 }
 
 .menuOptions a {
@@ -42,35 +44,44 @@ body {
 }
 
 .statementContainer {
-	width: 90%;
-	margin: auto;
+	width: 55em;
+	margin: 0 auto;
 }
 
 .missionStatement {
-	background-color: beige;
-	width: 15%;
-	height: 45%;
+	background-color: #f2bd29;
+	width: 18em;
+	height: 18em;
 	border-style: solid;
 	border-width: 1px;
 	display: inline-block;
+	overflow: overlay;
+	word-wrap: break-word;
+	border-radius: 10px;
 }
 
 .donateStatement {
-	background-color: lime;
-	width: 15%;
-	height: 45%;
+	background-color: #93CD18;
+	width: 18em;
+	height: 18em;
 	border-style: solid;
 	border-width: 1px;
 	display: inline-block;
+	overflow: overlay;
+	word-wrap: break-word;
+	border-radius: 10px;
 }
 
 .meetingupStatement {
-	background-color: blue;
+	background-color: #56CCBC;
 	border-style: solid;
 	border-width: 1px;
-	width: 15%;
-	height: 45%;
+	width: 18em;
+	height: 18em;
 	display: inline-block;
+	overflow: overlay;
+	word-wrap: break-word;
+	border-radius: 10px;
 }
 
 .displayInline {
