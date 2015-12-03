@@ -5,14 +5,14 @@ System.config({
   babelOptions: {
     "optional": [
       "runtime",
-      "optimisation.modules.system", 
+      "optimisation.modules.system",
       "es7.decorators",
       "es7.classProperties"
     ]
   },
   paths: {
-    "github:*": "./jspm_packages/github/*",
-    "npm:*": "./jspm_packages/npm/*"
+    "github:*": "jspm_packages/github/*",
+    "npm:*": "jspm_packages/npm/*"
   },
 
   map: {
@@ -23,6 +23,7 @@ System.config({
     "babel-runtime": "npm:babel-runtime@5.8.34",
     "core-js": "npm:core-js@1.2.6",
     "jquery": "github:components/jquery@2.1.4",
+    "text": "github:systemjs/plugin-text@0.0.3",
     "twbs": "npm:twbs@0.0.6",
     "twbs/bootstrap": "github:twbs/bootstrap@3.3.6",
     "github:jspm/nodelibs-assert@0.1.0": {

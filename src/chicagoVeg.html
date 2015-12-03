@@ -8,6 +8,7 @@
     </header>
     <nav-bar router.bind="router"></nav-bar>
     <section class="body-content">
+        <article>
         <div class="text-center  bolder header-text" style="display:none;">
             <h2>
              ChicagoVeg
@@ -17,16 +18,21 @@
       <div class="tab-content">
      <router-view></router-view>
      </div> 
-     <div>
-        <div class="pull-left">
+     </article>
+</section>
+<section class="messageAndEvents">
+    <article>
+        <div class="pull-left messageAndEventsLeftSide">
             <compose view-model="./message/message"></compose>
         </div>
-        <div class="pull-right">
-            <compose view-model="./upcomingEvents/upcomingEvents"></compose>
+        <div class="pull-right messageAndEventsRightSide">
+            <compose view-model="./hightlights/hightlights"></compose>
         </div>
         <div class="clearfix"></div>
-    </div>
+    </article>
 </section>
+
+
 <footer>
     <compose view-model="./footer/footer"></compose>
 </footer>

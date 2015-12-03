@@ -176,5 +176,6 @@
   },
   "github:twbs/bootstrap@3.3.6": {
     "jquery": "github:components/jquery"
-  }
+  },
+  "github:systemjs/plugin-text@0.0.3": {}
 }
