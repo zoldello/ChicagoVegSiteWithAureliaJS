@@ -111,7 +111,6 @@
   "github:twbs/bootstrap@3.3.6": {
     "jquery": "github:components/jquery"
   },
-  "github:systemjs/plugin-text@0.0.3": {},
   "npm:aurelia-templating-router@1.0.0-beta.1.0.4": {
     "aurelia-dependency-injection": "npm:aurelia-dependency-injection@^1.0.0-beta.1",
     "aurelia-logging": "npm:aurelia-logging@^1.0.0-beta.1",
@@ -180,5 +179,19 @@
   },
   "npm:lodash@3.10.1": {
     "process": "github:jspm/nodelibs-process@^0.1.0"
-  }
+  },
+  "github:systemjs/plugin-text@0.0.4": {},
+  "npm:aurelia-framework@1.0.0-beta.1.0.7": {
+    "aurelia-binding": "npm:aurelia-binding@^1.0.0-beta.1.0.1",
+    "aurelia-dependency-injection": "npm:aurelia-dependency-injection@^1.0.0-beta.1",
+    "aurelia-loader": "npm:aurelia-loader@^1.0.0-beta.1",
+    "aurelia-logging": "npm:aurelia-logging@^1.0.0-beta.1",
+    "aurelia-metadata": "npm:aurelia-metadata@^1.0.0-beta.1",
+    "aurelia-pal": "npm:aurelia-pal@^1.0.0-beta.1",
+    "aurelia-path": "npm:aurelia-path@^1.0.0-beta.1",
+    "aurelia-task-queue": "npm:aurelia-task-queue@^1.0.0-beta.1",
+    "aurelia-templating": "npm:aurelia-templating@^1.0.0-beta.1",
+    "core-js": "npm:core-js@^1.2.6"
+  },
+  "github:polymer/mutationobservers@0.4.2": {}
 }
