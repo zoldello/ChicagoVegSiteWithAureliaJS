@@ -1,4 +1,6 @@
 <template>
+	<require from="./setup-dropdown"></require>
+
 	<!-- This is always collapsed via a CSS hack () -->
 	<nav class="navbar navbar-default navbar-fixed-top menuOptions">
 		<div class="navbar-header">
@@ -17,10 +19,51 @@
 		<div id="navbarCollapse" class="collapse navbar-collapse nav-listing">
 			<ul class="nav navbar-nav navbar-right nav-tab">
 
-				<li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}">
-					<a href.bind="row.href">
-						${row.title}
-					</a>
+				<li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}" setup-dropdown.bind="row">
+					<!-- Non-submenu tabs -->
+					<template if.bind="hasNoSubMenu(row)">	
+						<a href.bind="row.href">
+							${row.title}
+						</a>
+					</template>
+
+					<!-- About us tab with submenu -->
+					<template if.bind="isAboutUsOption(row)">
+						<a href="#" data-toggle="dropdown" class="dropdown-toggle">
+							<span>${row.title}</span> <span class="caret"></span>
+						</a>
+						<ul role="menu" class="dropdown-menu">
+							<li repeat.for="subMenu of row.settings.subMenu">
+								<a href.bind="subMenu.href">
+									${subMenu.title}
+								</a>
+							</li>
+						</ul>
+					</template>
+
+					<!-- Restaurant tab with submenu -->
+					<template if.bind="isRestaurantOption(row)">
+						<a href="#" data-toggle="dropdown" class="dropdown-toggle">
+							<span>${row.title}</span> <span class="caret"></span>
+						</a>
+						<ul role="menu" class="dropdown-menu">
+							<li repeat.for="subMenu of row.settings.subMenu">
+								<a href.bind="subMenu.href" target="_blank">${subMenu.title}</a>
+							</li>
+						</ul>
+					</template>
+
+					<!-- Program tab with submenu -->
+					<template if.bind="isProgramsOption(row)">
+						<a href="#" data-toggle="dropdown" class="dropdown-toggle">
+							<span>${row.title}</span> <span class="caret"></span>
+						</a>
+						<ul role="menu" class="dropdown-menu">
+							<li repeat.for="subMenu of row.settings.subMenu">
+								<a href.bind="subMenu.href" target="_blank">${subMenu.title}</a>
+							</li>
+						</ul>
+					<template>
 				</li>               
 			</ul>
 		</div>
@@ -29,3 +72,22 @@
 		<i class="fa fa-spinner fa-spin"></i>
 	</div>	
 </template>	
+
+				<!-- //////////////////////////////////////// -->			
+<!--
+  <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Messages <b class="caret"></b></a>
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a href="#">Inbox</a></li>
+                        <li><a href="#">Drafts</a></li>
+                        <li><a href="#">Sent Items</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Trash</a></li>
+                    </ul>
+                </li>
+            </ul>
+            				-- >
+				<!-- //////////////////////////////////////// -->
