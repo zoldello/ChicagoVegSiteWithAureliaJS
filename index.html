@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Language" content="en-us">
-     <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="ChicagoVeg - Community for Chicago area vegetarians, vegans, raw foodists, or any veg-curious and their friends. ">
@@ -15,17 +15,19 @@
     <link href="./styles/style.css" rel="stylesheet">
 </head>
 <body aurelia-app="./src/main">
-    <script src="./jspm_packages/system.js"></script>
-    <script src="config.js"></script>
-    <script>
+    <div class="backframe">
+        <script src="./jspm_packages/system.js"></script>
+        <script src="config.js"></script>
+        <script>
         // Loads WeakMap polyfill needed by MutationObservers
         System.import('core-js').then(function() {
             return System.import('polymer/mutationobservers');
         }).then(function() {
-    System.import('aurelia-bootstrapper');
-  });
-</script>
+            System.import('aurelia-bootstrapper');
+        });
+        </script>
+    </div>
 </body>
 
-    <script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>
+<script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>
 </html>
