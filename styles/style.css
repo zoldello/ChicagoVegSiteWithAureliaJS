@@ -83,7 +83,7 @@ body {
 }
 
 .missionStatement {
-	background-color: #ae7716;
+	background-color: #d2801f;
 }
 
 .donateStatement {
@@ -102,6 +102,7 @@ body {
 /************************** CUSTOM Rebecka M.   ******************************/
 
 @import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Candal);
 
 body {
 	background: #a2a989 url("../images/bkg-pat.jpg") top left repeat;
@@ -127,12 +128,10 @@ body {
 h1 {
 	font-size: 1.5em;
 	text-align: center;
-	color: #ae7716;
 }
 
 .cgv-ttl {
-	font-size: 1.8em;
-	color: #ae7716;
+	font-size: 1.3em;
 }
 
 h3 {
@@ -141,9 +140,10 @@ h3 {
 }
 
 .brand {
-	margin-left: 90px;
-    height: 65px;
-    width: 120px;
+	margin-left: 73px !important;
+	margin-top: -25px;
+	height: 120px;
+	width: 200px;
 }
 
 nav {

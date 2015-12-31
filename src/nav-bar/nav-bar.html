@@ -2,7 +2,7 @@
 	<require from="./setup-dropdown"></require>
 
 	<!-- This is always collapsed via a CSS hack () -->
-	<nav class="navbar navbar-default navbar-fixed-top menuOptions">
+	<nav class="navbar navbar-default navbar-static menuOptions">
 		<div class="navbar-header">
 			<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
 				<span class="sr-only">Toggle navigation</span>
@@ -12,12 +12,12 @@
 			</button>
 			<div>
 				<a href="../../index.html" class="navbar-brand pull-left">
-					<img class="brand" src="./images/ChicagoVeg.jpg" alt="ChicagoVeg Restaurants" title ="ChicagoVeg Restaurants" width="90" height="55" />
+					<img class="brand" src="./images/logo.jpg" alt="ChicagoVeg Restaurants" title ="ChicagoVeg Restaurants" width="90" height="55" />
 				</a>
 			</div>      
 		</div>
 		<div id="navbarCollapse" class="collapse navbar-collapse nav-listing">
-			<ul class="nav navbar-nav navbar-right nav-tab">
+			<ul class="nav navbar-nav nav-tab">
 
 				<li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}" setup-dropdown.bind="row">
 					<!-- Non-submenu tabs -->
