@@ -16,15 +16,8 @@ export class NavBar {
 		return !row || !row.settings || !row.settings.subMenu;
 	}
 
-	isProgramsOption(row) {
-		return this.hasSubMenu(row) && row.title === 'Programs';
+	openNewPage(subMenu) {
+		return !!subMenu &&  subMenu.openNewPage ? '_blank' : '_self'; // TODO: move to custom attribute
 	}
 
-	isRestaurantOption(row) {
-		return this.hasSubMenu(row) && row.title === 'Restaurants';
-	}
-
-	isAboutUsOption(row) {
-		return this.hasSubMenu(row) && row.title === 'About Us';
-	}
 }

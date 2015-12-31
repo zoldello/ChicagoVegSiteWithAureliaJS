@@ -41,7 +41,7 @@ export class ChicagoVeg {
         				route: "mission",
 						"name": "mission",
 						moduleId: "./mission/mission",
-						title: "Mision",
+						title: "Mision", 
 						nav: true, 
 					}
       			]
@@ -56,10 +56,25 @@ export class ChicagoVeg {
 			nav: true, 
 			settings:{
       			subMenu:[
-        			{href:'http://www.google.com', title:'Outreach'},
-        			{href:'http://www.google.com', title:'Cooking'},
-        			{href:'http://www.google.com', title:'Singles'},
-        			{href:'http://www.google.com', title:'Family/Kids'}
+        			{
+        				href:'http://www.google.com', 
+        				title:'Outreach',
+        				openNewPage: true
+        			},
+        			{
+        				href:'http://www.google.com', 
+        				title:'Cooking',
+        				openNewPage: true},
+        			{
+        				href:'http://www.google.com', 
+        				title:'Singles',
+        				openNewPage: true
+        			},
+        			{
+        				href:'http://www.google.com', 
+        				title:'Family/Kids',
+        				openNewPage: true
+        			}
       			]
     		}
 		},
@@ -83,8 +98,15 @@ export class ChicagoVeg {
 			nav: true, 
 			settings:{
       			subMenu:[
-        			{ href:'http://restaurants.chicagoveg.com', title:'Finder' },
-        			{ href:'http://www.meetup.com/ChicagoVeg/pages/ChicagoVeg_Choice_2015/', title:'ChicagoVeg Choice'}
+        			{ 
+        				href:'http://restaurants.chicagoveg.com', 
+        				title:'Finder' ,
+        				openNewPage: true
+        			},
+        			{ 
+        				href:'http://www.meetup.com/ChicagoVeg/pages/ChicagoVeg_Choice_2015/', 
+        				title:'ChicagoVeg Choice',
+        				openNewPage: true}
       			]
     		}
 		}, {
