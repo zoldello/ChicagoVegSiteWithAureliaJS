@@ -57,12 +57,12 @@ export class ChicagoVeg {
 			settings:{
       			subMenu:[
         			{
-        				href:'http://www.google.com', 
+        				href:'http://www.meetup.com/ChicagoVegOutreach/', 
         				title:'Outreach',
         				openNewPage: true
         			},
         			{
-        				href:'http://www.google.com', 
+        				href:'http://www.meetup.com/ChicagoVegCooking/', 
         				title:'Cooking',
         				openNewPage: true},
         			{
@@ -71,7 +71,7 @@ export class ChicagoVeg {
         				openNewPage: true
         			},
         			{
-        				href:'http://www.google.com', 
+        				href:' http://www.meetup.com/ChicagoVegKids/', 
         				title:'Family/Kids',
         				openNewPage: true
         			}

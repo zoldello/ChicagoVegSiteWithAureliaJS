@@ -75,7 +75,7 @@ body {
 	font-size: 1.25em;
 	margin: 0;
     padding: 0;  
-	font-family: verdana, arial,sans-serif;
+	font-family: verdana, arial,saerif;
 }
 
 .backframe {
@@ -124,7 +124,6 @@ nav {
 
 }
 
-
 .nav a { 
 	background:#848d64 !important; 
 	color: #E4FFE0 !important;
@@ -136,12 +135,19 @@ nav {
 	margin-bottom: 0px !important;
 }
 
+.nav .dropdown-menu a {
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+	background:#848d64 !important; 
+	margin: 0 -5px 1px -1px !important;
+}
+
 .nav .active a { 
 	background:#414e13 !important; 
 } 
 
 .nav a:hover { 
-	background:#414e13 !important; 
+	background:#594e13 !important; 
 } 
 
 .nav li { 
@@ -192,8 +198,10 @@ nav {
 
 
 /*
-Hack from https://coderwall.com/p/wpjw4w/change-the-bootstrap-navbar-breakpoint and http://www.bootply.com/120604#
+(1)Hack from https://coderwall.com/p/wpjw4w/change-the-bootstrap-navbar-breakpoint and http://www.bootply.com/120604#
 to always show the hamburger menu (pattie burger) menu as collapsed sooner than default
+
+(2)This essential is the "mobile"-responsive design
 */
 @media (max-width: 1310px) { 
     .navbar-header {
@@ -237,5 +245,10 @@ to always show the hamburger menu (pattie burger) menu as collapsed sooner than 
 		margin-top: -80px;
 		height: 100px;
 		width: 200px;
+	}
+
+	.nav a { 
+		border-top-left-radius: 0 !important;
+		border-top-right-radius: 0 !important;
 	}
 }
