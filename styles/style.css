@@ -1,3 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Candal);
+
+body {
+	background: #CFCDC3 top left repeat;
+	font-size: 1.25em;
+	margin: 0;
+    padding: 0;  
+	font-family: verdana, arial,saerif;
+}
+
+.backframe {
+	background-color: #EFEEEF;
+	margin: 0 auto !important;
+	margin-bottom: 30px !important;
+	width: 90%;
+	height: 80% !important;
+	border-radius: 20px;
+	padding: 20px;
+	top: 50px;
+	position: relative !important;
+	-webkit-box-shadow: 0px 0px 13px 2px rgba(0,0,0,0.23);
+	-moz-box-shadow: 0px 0px 13px 2px rgba(0,0,0,0.23);
+	box-shadow: 0px 0px 13px 2px rgba(0,0,0,0.23);
+	overflow: hidden;
+}
+
+.body-content {
+	margin: 0 1% 1% 1%;
+	background-color: #FFFFFF !important;
+	border-radius: 8px !important;
+	padding: 2%;
+}
+
+h1 {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.cgv-ttl {
+	font-size: 1.3em;
+}
+
+h3 {
+	color: #E4FFE0;
+	font-size: 2.5em;
+}
+
+/*adjust branding*/
+	.brand {
+		margin-left: 30px !important;
+		margin-top: -51px;
+		height: 88px;
+		width: 150px;
+	}
+
+
+nav {
+	margin: 0 !important;
+}
+
+.nav a { 
+	background:#DCDCDC  !important; 
+	color: #E4FFE0 !important;
+	font-family: 'Arimo', sans-serif;
+	font-weight: normal;
+	border-top-left-radius: 10px !important;
+	border-top-right-radius: 10px !important;
+	padding: 15px 13px 15px 13px !important;
+	margin-bottom: 0px !important;
+}
+
+.nav .dropdown-menu a {
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+	margin: 0 -5px 1px -1px !important;
+}
+
+.nav .active a { 
+	background:#79726C !important; 
+} 
+
+.nav a:hover { 
+	background:#8a826C !important; 
+} 
+
+.nav li { 
+	background:none !important; 
+	margin: 0 1.5px 0 0 !important;
+} 
+
+.navbar {
+	margin-top: 0;
+}
+
+/* ------------- */
+/* 
+Display Dropdown on hover. Influenced by (1)http://codepen.io/Gothburz/pen/GpJKqP and 
+(2) http://stackoverflow.com/questions/8878033/how-to-make-twitter-bootstrap-menu-dropdown-on-hover-rather-than-click
+*/
+nav ul li:hover > ul {
+		display: block;
+}
+
+
+nav ul ul {
+	position: absolute; 
+}
+/* ------------- */
+
+.menuOptions {
+	padding-right:5%;
+	background-color: #1adb00; 
+	border-radius: 15px;
+	background-color: transparent !important; 
+	border: 0px !important;
+}
+
+.menuOptions a {
+	font-weight: 900;
+	/* font-size: 1.2em; */ 
+	color: Black !important;
+}
+
 .appContainer {
 	width: 90%;
 }
@@ -21,6 +145,10 @@
     width: 25em;
 }
 
+bold {
+    font-weight: bold;
+}
+
 .carousel{
   /*  background: #2f4357; */
     margin-top: 20px;
@@ -34,148 +162,25 @@
 	margin-top: 10px;
 }
 
-.menuOptions {
-	padding-right:5%;
-	background-color: #1adb00; 
-	border-radius: 15px;
-}
-
-.menuOptions a {
-	font-weight: 900;
-	/* font-size: 1.2em; */ 
-	color: Black !important;
-}
-
 .statementContainer {
 	width: 55em;
 	margin: 0 auto;
 }
 
 .missionStatement {
-	background-color: #d2801f;
+	background-color: #CFCDC3;
 }
 
 .donateStatement {
-	background-color: #958b59;
+	background-color: #84B744;
 }
 
 .meetingupStatement {
-	background-color: #7c415d;
+	background-color: #639FAA;
 }
 
 .displayInline {
 	display: inline;
-}
-
-@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);
-@import url(https://fonts.googleapis.com/css?family=Candal);
-
-body {
-	background: #a2a989 url("../images/bkg-pat.jpg") top left repeat;
-	font-size: 1.25em;
-	margin: 0;
-    padding: 0;  
-	font-family: verdana, arial,saerif;
-}
-
-.backframe {
-	background-color: #a2a989;
-	margin: 0 auto !important;
-	margin-bottom: 30px !important;
-	width: 90%;
-	height: 80% !important;
-	border-radius: 20px;
-	padding: 20px;
-	top: 50px;
-	position: relative !important;
-	-webkit-box-shadow: 0px 0px 13px 2px rgba(0,0,0,0.23);
-	-moz-box-shadow: 0px 0px 13px 2px rgba(0,0,0,0.23);
-	box-shadow: 0px 0px 13px 2px rgba(0,0,0,0.23);
-	overflow: hidden;
-}
-
-h1 {
-	font-size: 1.5em;
-	text-align: center;
-}
-
-.cgv-ttl {
-	font-size: 1.3em;
-}
-
-h3 {
-	color: #E4FFE0;
-	font-size: 2.5em;
-}
-
-.brand {
-	margin-left: 73px !important;
-	margin-top: -25%;
-	height: 100px;
-	width: 200px;
-}
-
-nav {
-	margin: 2em 0 0 0 !important;
-}
-
-.nav {
-	margin: 0 !important;
-
-}
-
-.nav a { 
-	background:#848d64 !important; 
-	color: #E4FFE0 !important;
-	font-family: 'Arimo', sans-serif;
-	font-weight: normal;
-	border-top-left-radius: 10px !important;
-	border-top-right-radius: 10px !important;
-	padding: 15px 23px 15px 23px !important;
-	margin-bottom: 0px !important;
-}
-
-.nav .dropdown-menu a {
-	border-top-left-radius: 0 !important;
-	border-top-right-radius: 0 !important;
-	background:#848d64 !important; 
-	margin: 0 -5px 1px -1px !important;
-}
-
-.nav .active a { 
-	background:#414e13 !important; 
-} 
-
-.nav a:hover { 
-	background:#594e13 !important; 
-} 
-
-.nav li { 
-	background:none !important; 
-	margin: 0 4px 0 0 !important;
-} 
-
-.navbar {
-	margin-top: 0;
-}
-
-.navbar ul {
-}
-
-.navbar-brand {
-   
-}
-
-.body-content {
-	margin: 0 1% 1% 1%;
-	background-color: #e7e2d3 !important;
-	border-radius: 8px !important;
-	padding: 2%;
-}
-
-.menuOptions {
-	background-color: transparent !important; 
-	border: 0px !important;
 }
 
 .statementContainer {
@@ -183,19 +188,16 @@ nav {
 }
 
 .stbox {
-	width: 33%;
-	height: 90%;
-	min-height: 20em;
+		width: 33%;
+	height: 60%;
+	min-height: 15em;
 	border-style: solid;
 	border-width: 1px;
-	border-color: #898989;
 	padding: 10px;
 	display: inline-block;
 	overflow: overlay;
 	word-wrap: break-word;
 }
-
-
 
 /*
 (1)Hack from https://coderwall.com/p/wpjw4w/change-the-bootstrap-navbar-breakpoint and http://www.bootply.com/120604#
@@ -203,7 +205,7 @@ to always show the hamburger menu (pattie burger) menu as collapsed sooner than 
 
 (2)This essential is the "mobile"-responsive design
 */
-@media (max-width: 1310px) { 
+@media (max-width: 1055px) { 
     .navbar-header {
         float: none;
     }
@@ -237,14 +239,6 @@ to always show the hamburger menu (pattie burger) menu as collapsed sooner than 
     }
     .collapse.in{
   		display:block !important;
-	}
-
-	/*adjust branding*/
-	.brand {
-		margin-left: 73px !important;
-		margin-top: -80px;
-		height: 100px;
-		width: 200px;
 	}
 
 	.nav a { 
