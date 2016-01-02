@@ -19,15 +19,40 @@
         <script src="./jspm_packages/system.js"></script>
         <script src="config.js"></script>
         <script>
-        // Loads WeakMap polyfill needed by MutationObservers
+        // Enabling IE 9
         System.import('core-js').then(function() {
             return System.import('polymer/mutationobservers');
         }).then(function() {
             System.import('aurelia-bootstrapper');
         });
         </script>
+        
+        <script>
+        // facebook (https://developers.facebook.com/docs/javascript/quickstart/v2.5)
+        window.fbAsyncInit = function() {
+            FB.init({
+              appId      : 'your-app-id',
+              xfbml      : true,
+              version    : 'v2.5'
+          });
+        };
+
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "//connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+        </script>
     </div>
 </body>
 
-<script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>
+<footer>
+    <compose view-model="./footer/footer"></compose>
+</footer>
+
+
+<script src='https://ssl.google-analytics.com/ga.js' type='text/javascript'></script>
+
 </html>

@@ -126,19 +126,6 @@ nav ul ul {
 	width: 90%;
 }
 
-.messageAndEvents {
-	margin: 0 1% 1% 1%;
-	padding: 2%;
-}
-
-.messageAndEventsLeftSide {
-	width: 70%;
-}
-
-.messageAndEventsRightSide {
-	width: 30%;
-}
-
 .centering {
 	 margin-left: auto;
     margin-right: auto;
@@ -175,7 +162,7 @@ bold {
 	background-color: #84B744;
 }
 
-.meetingupStatement {
+.programStatement {
 	background-color: #639FAA;
 }
 

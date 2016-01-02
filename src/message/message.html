@@ -1,6 +1,27 @@
 <template>
-	<p class="lead">Let's make the world a better place</p>
-	<p>
-		This is a test of a test during a test
-	</p>
+	<require from="./socialmedia"></require>
+	<div class="text-center">
+		<ul class="list-inline">
+			<li>
+				<a href="javascript:void(0)" social-media="{'url':'http://www.facebook.com/sharer.php?u=', 'top':'500', 'left':'500', 'width':'400', 'height':'400' }">
+					<img src="./images/facebook.png">
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)" social-media="{'url': 'http://twitter.com/share?text=Check out ChicagoVeg- ;url=', 'top':'500', 'left':'500', 'width':'400', 'height':'400' }">
+					<img src="./images/twitter.png">
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)" social-media="{'url': 'https://plus.google.com/share?url=', 'top':'500', 'left':'500', 'width':'600', 'height':'400' }">
+					<img src="./images/google_plus.png">
+				</a>
+			</li>
+			<li>
+				<a href="mailto:admins@chicagoveg.com?Subject=Feedback on ChicagoVeg" target="_blank">
+					<img src="./images/email.png">
+				</a>
+			</li>
+		</ul>
+	</div>
 </template>	
