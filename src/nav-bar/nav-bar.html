@@ -19,14 +19,14 @@
 				<li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}" setup-dropdown.bind="row">
 					<!-- Non-submenu tabs -->
 					<template if.bind="hasNoSubMenu(row)">	
-						<a href.bind="row.href">
+						<a href.bind="row.href" class="disabled">
 							${row.title}
 						</a>
 					</template>
 
 					<!-- Has submenu and subrouters- -->
 					<template if.bind="hasSubMenu(row)">
-						<a href.bind="row.href" data-toggle="dropdown" class="dropdown-toggle">
+						<a href.bind="row.href" data-toggle="dropdown" class="dropdown-toggle disabled">
 							<span>${row.title}</span> <span class="caret"></span>
 						</a>
 						<ul role="menu" class="dropdown-menu">

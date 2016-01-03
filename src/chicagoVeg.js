@@ -43,6 +43,15 @@ export class ChicagoVeg {
 				moduleId: "./mission/mission",
 				title: "Mision", 
 				nav: true, 
+			},
+			{
+				href:'#/donate', 
+				title:'Donate',
+				route: "donate",
+				"name": "donate",
+				moduleId: "./donate/donate",
+				title: "Donate", 
+				nav: true, 
 			}
 			]
 		}
@@ -175,7 +184,14 @@ export class ChicagoVeg {
 			moduleId: "./family-kids/family-kids",
 			title: "Family/kids",
 			nav: false
-		}		 			 			 		 			 		 
+		},
+		{
+			route: "donate",
+			"name": "donate",
+			moduleId: "./donate/donate",
+			title: "Donate",
+			nav: false
+		}		 			 			 			 		 			 		 
 		]);
 
 		this.router = router; //save router reference

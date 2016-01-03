@@ -5,6 +5,7 @@ import {customAttribute, inject} from 'aurelia-framework';
 export class socialMedia {
 	constructor(element) {
     this.element = element;
+    this.year = new Date().getFullYear();
   }
 
   	// TODO: quite hacky. binding is not needed, so read off values. Find a better way
