@@ -1,22 +1,22 @@
 <template>
 	<section>
 		<article> 
-			<div class="statementContainer ">
-
-				<div class="stbox missionStatement">
-					<h3 class="lead">Our Mission</h3>
-					test
-				</div>
-
-				<div class="stbox donateStatement">
-					<h3 class="lead">Our Donate</h3>
-					test
-				</div>
-
-				<div class="stbox programStatement">
-					<h3 class="lead">Our Programs</h3>
-					test
-				</div>
+			<div class="statementContainer">
+				<div class.bind="box.boxStyle" repeat.for="box of boxes">
+					<h3 class="lead">${box.header}</h3>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-4">
+								<span class.bind="box.logoStyle"></span>
+							</div>
+							<div class="col-md-8">
+								<span>
+									${box.message}
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>				
 			</div>
 		</article>
 	</section> 

@@ -63,6 +63,8 @@
       "aurelia-pal": "npm:aurelia-pal@^1.0.0-beta.1.0.1",
       "aurelia-router": "npm:aurelia-router@^1.0.0-beta.1",
       "aurelia-templating-router": "npm:aurelia-templating-router@^1.0.0-beta.1.0.1",
+      "css": "github:systemjs/plugin-css@^0.1.20",
+      "font-awesome": "npm:font-awesome@^4.5.0",
       "jquery": "github:components/jquery@^2.1.4",
       "lodash": "npm:lodash@^3.10.1",
       "polymer/mutationobservers": "github:polymer/mutationobservers@^0.4.2",
