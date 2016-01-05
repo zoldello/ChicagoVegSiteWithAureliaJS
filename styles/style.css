@@ -2,15 +2,25 @@
 @import url(https://fonts.googleapis.com/css?family=Candal);
 
 body {
-	background: #ccc top left repeat;
+	background: #958b59 url("../images/bkg-pat.jpg") top left repeat;
 	font-size: 1.25em;
 	margin: 0;
     padding: 0;  
 	font-family: verdana, arial,saerif;
 }
 
+a {
+	color: #003e00;
+	font-family: 'Arimo', sans-serif;
+	font-weight: 400;
+}
+
+a:hover {
+	color: #414e13;
+}
+
 .backframe {
-	background-color: #EFEEEF;
+	background-color: #a2a989;
 	margin: 0 auto !important;
 	margin-bottom: 30px !important;
 	width: 90%;
@@ -27,14 +37,15 @@ body {
 
 .body-content {
 	margin: 0 1% 1% 1%;
-	background-color: #FFFFFF !important;
+	background-color: #ebe8dd !important;
 	border-radius: 8px !important;
 	padding: 2%;
 }
 
 h1 {
-	font-size: 1.5em;
+	font-size: 1.6em;
 	text-align: center;
+	color: #d2801f;
 }
 
 .cgv-ttl {
@@ -42,16 +53,14 @@ h1 {
 }
 
 h3 {
-	color: #E4FFE0;
+	color: #fff;
 	font-size: 2.5em;
 }
 
 /*adjust branding*/
 	.brand {
-		margin-left: 30px !important;
-		margin-top: -51px;
-		height: 88px;
-		width: 150px;
+		width: 100px;
+		margin: -45px 0 0 23px;
 	}
 
 
@@ -60,10 +69,10 @@ nav {
 }
 
 .nav a { 
-	background:#DCDCDC  !important; 
-	color: #E4FFE0 !important;
+	background: #848d64 !important; 
+	color: #252525 !important;
 	font-family: 'Arimo', sans-serif;
-	font-weight: normal;
+	font-weight: 400;
 	border-top-left-radius: 10px !important;
 	border-top-right-radius: 10px !important;
 	padding: 15px 13px 15px 13px !important;
@@ -73,15 +82,37 @@ nav {
 .nav .dropdown-menu a {
 	border-top-left-radius: 0 !important;
 	border-top-right-radius: 0 !important;
-	margin: 0 -5px 1px -1px !important;
+	margin: 0 -1px 1px -1px !important;
+	
+}
+
+.dropdown-menu > li > a {
+  line-height: 0 !important;
+  padding: 15px 20px !important;
+}
+
+.dropdown-menu > li:last-of-type > a {
+	border-bottom-left-radius: 10px !important;
+	border-bottom-right-radius: 10px !important;
+	border-bottom: none !important;
+}
+
+.dropdown-menu {
+	background-clip: none;
+	background-color: transparent !important;
+	border: none;
+	box-shadow: none;
+	padding: 0 !important;
 }
 
 .nav .active a { 
-	background:#79726C !important; 
+	background:#414e13 !important; 
+	color: #fff !important;
 } 
 
 .nav a:hover { 
-	background:#8a826C !important; 
+	background:#414e13  !important; 
+	color: #fff !important;
 } 
 
 .nav li { 
@@ -110,16 +141,8 @@ nav ul ul {
 
 .menuOptions {
 	padding-right:5%;
-	background-color: #1adb00; 
-	border-radius: 15px;
 	background-color: transparent !important; 
 	border: 0px !important;
-}
-
-.menuOptions a {
-	font-weight: 900;
-	/* font-size: 1.2em; */ 
-	color: Black !important;
 }
 
 .appContainer {
@@ -136,13 +159,19 @@ bold {
     font-weight: bold;
 }
 
-.carousel{
-  /*  background: #2f4357; */
-    margin-top: 20px;
-    margin-bottom: 20px;
+#myCarousel {
+	height: 500px;
+	margin-bottom: 20px;
 }
-.carousel .item img{
+
+.carousel-inner {
+	height: 100%;
+}
+
+.carousel .item .slide img{
     margin: 0 auto; /* Align slide image horizontally center */
+   margin-bottom: 20px !important;
+   vertical-align: middle !important;
 }
 
 .header-text { 
@@ -155,15 +184,15 @@ bold {
 }
 
 .missionStatement {
-	background-color: #CE9500;
+	background-color: #d2801f;
 }
 
 .donateStatement {
-	background-color: #84B744;
+	background-color: #958b59;
 }
 
 .programStatement {
-	background-color: #639FAA;
+	background-color: #7c415d;
 }
 
 .displayInline {
@@ -175,15 +204,13 @@ bold {
 }
 
 .stbox {
-		width: 33%;
-	height: 60%;
+	width: 33%;
 	min-height: 15em;
-	border-style: solid;
-	border-width: 1px;
-	padding: 10px;
+	padding: 0 10px 10px 10px;
 	display: inline-block;
 	overflow: overlay;
 	word-wrap: break-word;
+	margin: 1px;
 }
 
 /*

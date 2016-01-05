@@ -37,11 +37,11 @@ export class ChicagoVeg {
 			},
 			{
 				href:'#/mission', 
-				title:'Mision',
+				title:'Mission',
 				route: "mission",
 				"name": "mission",
 				moduleId: "./mission/mission",
-				title: "Mision", 
+				title: "Mission", 
 				nav: true, 
 			},
 			{
@@ -109,7 +109,7 @@ export class ChicagoVeg {
 		route: "news",
 		"name": "news",
 		moduleId: "./news/news",
-		title: "News",
+		title: "Meetup",
 		nav: true
 	}, {
 		route: "resources",
