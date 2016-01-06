@@ -48,6 +48,15 @@ h1 {
 	color: #d2801f;
 }
 
+/* center caurosel: http://stackoverflow.com/a/10258308/178550; */
+.carousel-inner { 
+	text-align: center; 
+}
+
+.carousel .item > img { 
+	display: inline-block; 
+}
+
 .cgv-ttl {
 	font-size: 1.3em;
 }
