@@ -228,7 +228,7 @@ to always show the hamburger menu (pattie burger) menu as collapsed sooner than 
 
 (2)This essential is the "mobile"-responsive design
 */
-@media (max-width: 1055px) { 
+@media (max-width: 970px) { 
     .navbar-header {
         float: none;
     }
