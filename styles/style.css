@@ -170,17 +170,25 @@ bold {
 
 #myCarousel {
 	height: 500px;
-	margin-bottom: 20px;
+	margin: 0 auto !important;
+	text-align: center !important;
 }
 
 .carousel-inner {
 	height: 100%;
+	text-align: center !important;
+	margin: 0 auto !important;
+}
+
+.carousel-inner img {
+	text-align: center !important;
+	margin: 0 auto !important;
 }
 
 .carousel .item .slide img{
-    margin: 0 auto; /* Align slide image horizontally center */
-   margin-bottom: 20px !important;
+    margin: 0 auto !important; /* Align slide image horizontally center */
    vertical-align: middle !important;
+   text-align: center !important;
 }
 
 .header-text { 
@@ -190,6 +198,7 @@ bold {
 .statementContainer {
 	width: 55em;
 	margin: 0 auto;
+	margin-top: 10px;
 }
 
 .missionStatement {
@@ -220,6 +229,24 @@ bold {
 	overflow: overlay;
 	word-wrap: break-word;
 	margin: 1px;
+}
+
+.copyright {
+	float: left;
+	position: relative;
+	margin-left: 20px;
+}
+
+.social {
+	float: left;
+	position: relative;
+	margin-left: 30px;
+}
+
+.facebook {
+	float: left;
+	position: relative;
+	margin-left: 30px;
 }
 
 /*

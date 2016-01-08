@@ -106,9 +106,10 @@ export class ChicagoVeg {
 		}
 	},
 	{
-		route: "news",
-		"name": "news",
-		moduleId: "./news/news",
+		href: 'http://www.meetup.com/ChicagoVeg/',
+		route: "meetup",
+		"name": "meetup",
+		moduleId: "./meetup/meetup",
 		title: "Meetup",
 		nav: true
 	}, {
