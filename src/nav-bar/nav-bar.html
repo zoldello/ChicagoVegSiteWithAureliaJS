@@ -19,7 +19,7 @@
 				<li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}" setup-dropdown.bind="row">
 					<!-- Non-submenu tabs -->
 					<template if.bind="hasNoSubMenu(row)">	
-						<a href.bind="row.href" class="disabled">
+						<a href.bind="row.href" class="disabled" target.bind="openNewPage(row)">
 							${row.title}
 						</a>
 					</template>

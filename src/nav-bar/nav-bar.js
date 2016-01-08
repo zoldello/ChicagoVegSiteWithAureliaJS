@@ -16,8 +16,12 @@ export class NavBar {
 		return !row || !row.settings || !row.settings.subMenu;
 	}
 
-	openNewPage(subMenu) {
-		return !!subMenu &&  subMenu.openNewPage ? '_blank' : '_self'; // TODO: move to custom attribute
+	openNewPage(item) {
+		if (!item) {
+			return;
+		}
+
+		return (item.openNewPage || item.title === 'Meetup') ? '_blank' : '_self'; // TODO: move to custom attribute, plus, it seems hacky
 	}
 
 }
