@@ -192,7 +192,7 @@ export class ChicagoVeg {
 			moduleId: "./donate/donate",
 			title: "Donate",
 			nav: false
-		}		 			 			 			 		 			 		 
+		}	 			 			 			 		 			 		 		 			 			 			 		 			 		 
 		]);
 
 		this.router = router; //save router reference

@@ -1,3 +1,31 @@
 <template>
-	contact us
-</template>	
+    <div class="centering">
+        <p class="lead">Contact Us<p/>
+            <form method="post" action="./src/contactus/form.php"  enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="nameBox">Name</label>
+                    <input name="name" required id="nameBox" class="form-control" placeholder="name">
+                </div>
+                <div class="form-group">
+                    <label for="emailBox">E-Mail</label>
+                    <input name="email" type="email" required id="emailBox" class="form-control" placeholder="email">
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea id="messageBox" name="message" required class="form-control" cols="20" rows="5" placeholder="message"></textarea>
+                </div>
+                <div class="form-group">
+                    <p>copy the digits from the image into this box</p>
+                    <img src="./src/contactus/captcha.php" alt="CAPTCHA">
+                </div>
+                <div class="form-group">
+                    <input type="text" size="6" maxlength="5" name="captcha" value="" class="captchaBox" required="">
+                    <span id="invalidCaptcha" class="bolder" style="display: none;">Invalid Captcha</span>
+                </div>
+                <div class="form-group">
+                    <input id="submit" name="submit" type="submit" value="Submit">
+                    <input id="reset" type="reset" name="reset" value="Reset">
+                </div>
+            </form>
+    </div>
+</template>
