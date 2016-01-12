@@ -40,10 +40,12 @@ a:hover {
 	background-color: #ebe8dd !important;
 	border-radius: 8px !important;
 	padding: 2%;
+	height: 100%;
+	min-height: 700px;
 }
 
 h1 {
-	font-size: 1.6em;
+	font-size: 1.8em;
 	text-align: center;
 	color: #d2801f;
 }
@@ -66,15 +68,42 @@ h3 {
 	font-size: 2.5em;
 }
 
+h4 {
+	color: #d2801f;
+	font-family: 'Arimo', sans-serif;
+	font-weight: 500;
+	font-size: 1.8em;
+	border-left: 1px solid #9ab859;
+	border-bottom: 1px solid #9ab859;
+	line-height: 2em;
+	padding-left: 5px;
+}
+
+h5 {
+	color: #958b59;
+	font-family: 'Arimo', sans-serif;
+	font-weight: 500;
+	font-size: 1.5em;
+	line-height: 2em;
+	padding-left: 5px;
+}
+
+.subtext {
+	font-size: 1.3em;
+	font-weight: 400;
+	color: #958b59;
+	font-family: 'Arimo', sans-serif;
+}
+
 /*adjust branding*/
 	.brand {
-		width: 100px;
-		margin: -45px 0 0 23px;
+		width: 145px;
+		margin: -77px 0 0 43px;
 	}
 
 
 nav {
-	margin: 0 !important;
+	margin: 30px 0 0 0 !important;
 }
 
 .nav a { 
@@ -149,7 +178,7 @@ nav ul ul {
 /* ------------- */
 
 .menuOptions {
-	padding-right:5%;
+	padding-right: 5% !important;
 	background-color: transparent !important; 
 	border: 0px !important;
 }
@@ -195,6 +224,40 @@ bold {
 	margin-top: 10px;
 }
 
+.leftside {
+	width: 45%;
+	float: left;
+	margin-top: 20px;
+}
+
+.leftside img {
+	border: 1px solid #9ab859;
+    padding: 7px;
+    margin: 10px;
+}
+
+.rightside {
+	width: 50%;
+	float: right;
+	margin-top: 20px;
+	border: 1px solid #9ab859;
+    padding: 7px;
+    margin: 10px;
+}
+
+.clearfix {
+	clear: left;	
+}
+
+/*.rightside img {
+	border: 2px solid transparent;
+    padding: 5px;
+    -webkit-border-image: url("../images/vine400.jpg") 30 round; /* Safari 3.1-5 
+    -o-border-image: url("../images/vine400.jpg") 30 round; /* Opera 11-12.1 
+    border-image: url("../images/vine400.jpg") 30 round;
+    border-radius: 10px;
+}
+*/
 .statementContainer {
 	width: 55em;
 	margin: 0 auto;
@@ -248,12 +311,24 @@ bold {
 	position: relative;
 	top: -10px;
 	margin-left: 30px;
+	height: 70px;
 }
 
 .facebook iframe {
 	border-style: none;
 }
 
+=======
+.carousel-control.left {
+  background-image: linear-gradient(to right, rgba(149, 139, 89, 0.5) 0px, rgba(0, 0, 0, 0) 100%) !important;
+}
+
+.carousel-control.right {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0px, rgba(149, 139, 89, 0.5) 100%) !important;
+}
+
+
+>>>>>>> RM Updates to inner pages 1-11-16
 /*
 (1)Hack from https://coderwall.com/p/wpjw4w/change-the-bootstrap-navbar-breakpoint and http://www.bootply.com/120604#
 to always show the hamburger menu (pattie burger) menu as collapsed sooner than default
