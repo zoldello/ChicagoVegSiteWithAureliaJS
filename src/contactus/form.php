@@ -7,7 +7,7 @@
         }if(isset($data['email'])){
           $email=$data['email'];
         }if(isset($data['message'])){
-          $message=$data['mesage'];
+          $message=$data['message'];
         }if(isset($data['g-recaptcha-response'])){
           $captcha=$data['g-recaptcha-response'];
         }
