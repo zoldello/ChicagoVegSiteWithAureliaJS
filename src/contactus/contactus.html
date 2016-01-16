@@ -1,8 +1,7 @@
 <template>
     <div class="centering subtext">
         <h4>Contact Us</h4>
-            <form method="post" enctype="multipart/form-data" submit.delegate="form_clicked()">                 <div class="centering subtext">
-            <form method="post" enctype="multipart/form-data" submit.delegate="form_clicked()">
+            <form method="post" enctype="multipart/form-data" submit.delegate="form_clicked()">                 
                 <div class="form-group">
                     <label for="nameBox">Name</label>
                     <input name="name" value.bind="name" required id="nameBox" class="form-control" placeholder="name">
@@ -16,7 +15,7 @@
                     <textarea id="messageBox" name="message" value.bind="message" required class="form-control" cols="20" rows="5" placeholder="message"></textarea>
                 </div>
                 <div class="form-group">
-                   <iframe src="src/contactus/recaptcha.html"></iframe>
+                   <iframe id="contactFrame" src="src/contactus/recaptcha.html"></iframe>
                 </div>
                 <div class="form-group">
                     <input id="submit" name="submit" type="submit" value="Submit">

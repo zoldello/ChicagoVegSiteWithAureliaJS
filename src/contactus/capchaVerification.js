@@ -8,8 +8,8 @@ export class CapchaVerification {
     }
 
    submit(name, email, message) {
-   		this.http.fetch('form.php', {
-   			method: 'post',  
+   		this.http.fetch('src/contactus/form.php', {
+   			method: 'POST',  
    			headers: {
     			'Accept': 'application/json',
     			'Content-Type': 'application/json'
@@ -18,36 +18,14 @@ export class CapchaVerification {
     			'name':  name,
     			'email': email,
     			'message': message,
-    			'g-recaptcha-response': document.querySelector('g-recaptcha-response')
+    			'g-recaptcha-response': document.querySelector('#contactFrame').contentWindow.document.querySelector('.g-recaptcha-response').value 
   			})
    		}).then(response => {
-   			let x = 0;
+   			if (response.status === 200) {
+
+        } else {
+          
+        }
    		});
    }
 }
-
-
-/*
-fetch('/users', {
-  method: 'post',
-  headers: {
-    'Accept': 'application/json',
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({
-    name: 'Hubot',
-    login: 'hubot',
-  })
-})
-
-
- this.http.fetch("form.php", {
-            method: "post",
-            body: json(contact)
- 
-        }).then(response => {
-            this.isInserted = true;
-            this.statusCode = response.status;
-            this.textShowAll = "Show All";
-        });
-*/
