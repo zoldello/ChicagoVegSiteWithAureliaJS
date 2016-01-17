@@ -7,8 +7,10 @@ export class CapchaVerification {
         this.http = http;
     }
 
-   submit(name, email, message) {
-   		this.http.fetch('src/contactus/form.php', {
+   submit(name, email, message, verified) {
+    let status;
+
+   	return	this.http.fetch('src/contactus/form.php', {
    			method: 'POST',  
    			headers: {
     			'Accept': 'application/json',
@@ -21,11 +23,9 @@ export class CapchaVerification {
     			'g-recaptcha-response': document.querySelector('#contactFrame').contentWindow.document.querySelector('.g-recaptcha-response').value 
   			})
    		}).then(response => {
-   			if (response.status === 200) {
-
-        } else {
-          
-        }
+          verified(response);
    		});
+
+      return result;
    }
 }

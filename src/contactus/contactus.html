@@ -1,6 +1,7 @@
 <template>
     <div class="centering subtext">
         <h4>Contact Us</h4>
+        <div show.bind="messageInPreparation">
             <form method="post" enctype="multipart/form-data" submit.delegate="form_clicked()">                 
                 <div class="form-group">
                     <label for="nameBox">Name</label>
@@ -22,5 +23,12 @@
                     <input id="reset" type="reset" name="reset" value="Reset">
                 </div>
             </form>
+        </div>
+        <div show.bind="messageSent">
+            <span class="messageSent">Message was sent</span>
+        </div>
+        <div show.bind="messageNotSent">
+            <span class="messageNotSent">Message was not sent. Ensure you are connected to the internet </span>
+        </div>
     </div>
 </template>

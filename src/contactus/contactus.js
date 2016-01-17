@@ -8,12 +8,48 @@ export class ContactUs {
 		this.name; 
 		this.email;
 		this.message;
+
+		this.messageSent = false; 
+		this.messageNotSent = false; 
+		this.messageInPreparation = true; 
+	}
+
+	activate() {
+		this.reprepareMessage();
 	}
 
 	form_clicked() {
-		let result = this.capchaVerification.submit(this.name, 
+		let status = this.capchaVerification.submit(this.name, 
 			this.email,
-			this.message);
-		let x = 0;
+			this.message, 
+			(this.verified).bind(this));
 	}
+
+	verified(response) {
+		if (response.status === 200) {
+			this.messageSuccessful();
+		} else {
+			this.messageSentUnsuccessfully();
+		}
+	}
+
+	messageSuccessful() {
+		this.messageSent = true; 
+		this.messageInPreparation = false; 
+		this.messageNotSent = false; 
+	}
+
+	messageSentUnsuccessfully() {
+		this.messageSent = false; 
+		this.messageInPreparation = false; 
+		this.messageNotSent = true; 
+	}
+
+	reprepareMessage() {
+		this.messageSent = false; 
+		this.messageInPreparation = true; 
+		this.messageNotSent = false;
+	}
+
+
 }
