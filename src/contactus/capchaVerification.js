@@ -5,7 +5,7 @@ import {HttpClient} from 'aurelia-fetch-client';
 export class CapchaVerification {
 	constructor(http){
         this.http = http;
-    }
+  }
 
    submit(name, email, message, verified) {
     let status;
@@ -20,12 +20,16 @@ export class CapchaVerification {
     			'name':  name,
     			'email': email,
     			'message': message,
-    			'g-recaptcha-response': document.querySelector('#contactFrame').contentWindow.document.querySelector('.g-recaptcha-response').value 
+    			'g-recaptcha-response': document.querySelector('#contactFrame').contentWindow.document.querySelector('.g-recaptcha-response').value
   			})
    		}).then(response => {
           verified(response);
    		});
 
       return result;
+   }
+
+   iscapchaImagesCorrectlyIdentified() {
+      return !!document.querySelector('#contactFrame').contentWindow.document.querySelector('.g-recaptcha-response').value; 
    }
 }

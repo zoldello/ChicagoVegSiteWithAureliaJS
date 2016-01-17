@@ -2,8 +2,7 @@
     <div class="centering subtext">
         <h4>Contact Us</h4>
         <div show.bind="messageInPreparation">
-            <form method="post" enctype="multipart/form-data" submit.delegate="form_clicked()">                 
-                <div class="form-group">
+            <form method="post" enctype="multipart/form-data" submit.delegate="form_clicked()">    <div class="form-group">
                     <label for="nameBox">Name</label>
                     <input name="name" value.bind="name" required id="nameBox" class="form-control" placeholder="name">
                 </div>
@@ -16,7 +15,7 @@
                     <textarea id="messageBox" name="message" value.bind="message" required class="form-control" cols="20" rows="5" placeholder="message"></textarea>
                 </div>
                 <div class="form-group">
-                   <iframe id="contactFrame" src="src/contactus/recaptcha.html"></iframe>
+                   <iframe id="contactFrame" src="src/contactus/recaptcha.html" class="google-recapcha-iframe "></iframe>
                 </div>
                 <div class="form-group">
                     <input id="submit" name="submit" type="submit" value="Submit">

@@ -19,6 +19,12 @@ export class ContactUs {
 	}
 
 	form_clicked() {
+		if (!this.capchaVerification.iscapchaImagesCorrectlyIdentified()) {
+			alert('Captcha images need to be correctly identified');
+			return;
+		}
+
+
 		let status = this.capchaVerification.submit(this.name, 
 			this.email,
 			this.message, 
