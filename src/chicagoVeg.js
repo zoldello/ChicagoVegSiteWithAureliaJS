@@ -32,8 +32,7 @@ export class ChicagoVeg {
 				route: "history",
 				"name": "history",
 				moduleId: "./history/history",
-				title: "History",
-				nav: true, 
+				nav: true
 			},
 			{
 				href:'#/mission', 
@@ -41,8 +40,7 @@ export class ChicagoVeg {
 				route: "mission",
 				"name": "mission",
 				moduleId: "./mission/mission",
-				title: "Mission", 
-				nav: true, 
+				nav: true
 			},
 			{
 				href:'#/donate', 
@@ -50,8 +48,7 @@ export class ChicagoVeg {
 				route: "donate",
 				"name": "donate",
 				moduleId: "./donate/donate",
-				title: "Donate", 
-				nav: true, 
+				nav: true 
 			},
 			{
 				href:'#/classifications', 
@@ -59,8 +56,7 @@ export class ChicagoVeg {
 				route: "classifications",
 				"name": "classifications",
 				moduleId: "./classifications/classifications",
-				title: "Classifications", 
-				nav: true, 
+				nav: true
 			}
 			]
 		}
@@ -143,10 +139,11 @@ export class ChicagoVeg {
 			{ 
 				href:'http://www.meetup.com/ChicagoVeg/pages/ChicagoVeg_Choice_2015/', 
 				title:'ChicagoVeg Choice',
-				openNewPage: true}
-				]
-			}
-		}, {
+				openNewPage: true
+				
+			}]
+		}}, 
+		{
 			route: "contactus",
 			"name": "contactus",
 			moduleId: "./contactus/contactus",
