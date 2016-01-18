@@ -5,9 +5,9 @@ import {CapchaVerification} from './capchaVerification';
 export class ContactUs {
 	constructor(capchaVerification) {
 		this.capchaVerification = capchaVerification;
-		this.name; 
-		this.email;
-		this.message;
+		this.name = ""; 
+		this.email = "";
+		this.message = "";
 
 		this.messageSent = false; 
 		this.messageNotSent = false; 
@@ -25,7 +25,7 @@ export class ContactUs {
 		}
 
 
-		let status = this.capchaVerification.submit(this.name, 
+		this.capchaVerification.submit(this.name, 
 			this.email,
 			this.message, 
 			(this.verified).bind(this));
@@ -56,6 +56,4 @@ export class ContactUs {
 		this.messageInPreparation = true; 
 		this.messageNotSent = false;
 	}
-
-
 }

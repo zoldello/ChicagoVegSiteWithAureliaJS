@@ -10,7 +10,7 @@ export class CapchaVerification {
    submit(name, email, message, verified) {
     let status;
 
-   	return	this.http.fetch('src/contactus/form.php', {
+   	this.http.fetch('src/contactus/form.php', {
    			method: 'POST',  
    			headers: {
     			'Accept': 'application/json',
@@ -25,8 +25,6 @@ export class CapchaVerification {
    		}).then(response => {
           verified(response);
    		});
-
-      return result;
    }
 
    iscapchaImagesCorrectlyIdentified() {
