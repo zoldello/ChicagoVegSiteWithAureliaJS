@@ -31,7 +31,8 @@ var config = {
       'aurelia-templating-binding',
       'aurelia-templating-resources',
       'polymer/mutationobservers',
-      'aurelia-templating-router'
+      'aurelia-templating-router',
+      'fetch'
     ],
       options: {
         inject: true,

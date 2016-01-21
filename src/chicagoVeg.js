@@ -144,9 +144,9 @@ export class ChicagoVeg {
 			}]
 		}}, 
 		{
-			route: "contactus",
-			"name": "contactus",
-			moduleId: "./contactus/contactus",
+			route: "contact",
+			"name": "contact",
+			moduleId: "./contact/contact",
 			title: "Contact Us",
 			nav: true
 		},
