@@ -10,14 +10,14 @@ var config = {
       includes: [
         '[*]',
         '*.html!text',
-        '*.css!text',        
+        '*.css!text',
       ],
       options: {
         inject: true,
         minify: true
       }
     },
-   "dist/vendor-build.js": { 
+   "dist/vendor-build": {
     includes: [
       'aurelia-bootstrapper',
       'aurelia-fetch-client',
@@ -32,7 +32,15 @@ var config = {
       'aurelia-templating-resources',
       'polymer/mutationobservers',
       'aurelia-templating-router',
-      'fetch'
+      'fetch',
+      "bluebird",
+      "jquery",
+      "font-awesome",
+      "twbs/bootstrap",
+      "babel",
+      "core-js",
+      "text",
+      "font-awesome"
     ],
       options: {
         inject: true,

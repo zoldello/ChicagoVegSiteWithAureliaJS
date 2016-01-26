@@ -7,11 +7,11 @@ export class ChicagoVeg {
 
 	configureRouter(config, router) {
 		config.title = 'ChicagoVeg';
-		
-		
+
+
 		// need default router: https://github.com/aurelia/router/issues/62
 		// submenu idea from: https://gist.github.com/adarshpastakia/5d8462b5bc8d958d5cb3
-		config.map([	
+		config.map([
 		{
 			route: ["", "home"],
 			"name": "home",
@@ -24,10 +24,10 @@ export class ChicagoVeg {
 			"name": "aboutus",
 			moduleId: "./aboutus/aboutus",
 			title: "About Us",
-			nav: true, 
+			nav: true,
 			settings:{
 				subMenu:[
-				{	href:'#/history', 
+				{	href:'#/history',
 				title:'History',
 				route: "history",
 				"name": "history",
@@ -35,7 +35,7 @@ export class ChicagoVeg {
 				nav: true
 			},
 			{
-				href:'#/mission', 
+				href:'#/mission',
 				title:'Mission',
 				route: "mission",
 				"name": "mission",
@@ -43,15 +43,15 @@ export class ChicagoVeg {
 				nav: true
 			},
 			{
-				href:'#/donate', 
+				href:'#/donate',
 				title:'Donate',
 				route: "donate",
 				"name": "donate",
 				moduleId: "./donate/donate",
-				nav: true 
+				nav: true
 			},
 			{
-				href:'#/classifications', 
+				href:'#/classifications',
 				title:'Classifications',
 				route: "classifications",
 				"name": "classifications",
@@ -67,11 +67,11 @@ export class ChicagoVeg {
 		"name": "programs",
 		moduleId: "./programs/programs",
 		title: "Programs",
-		nav: true, 
+		nav: true,
 		settings:{
 			subMenu:[
 			{
-				href:'#/outreach', 
+				href:'#/outreach',
 				title:'Outreach',
 				openNewPage: false,
 				route:"outreach",
@@ -80,7 +80,7 @@ export class ChicagoVeg {
 				nav: true
 			},
 			{
-				href:'#/cooking', 
+				href:'#/cooking',
 				title:'Cooking',
 				route:"cooking",
 				"name": "cooking",
@@ -89,8 +89,8 @@ export class ChicagoVeg {
 				nav: true
 			},
 			{
-				
-				href:'#/singles', 
+
+				href:'#/singles',
 				title:'Singles',
 				openNewPage: false,
 				route:"singles",
@@ -99,9 +99,9 @@ export class ChicagoVeg {
 				nav: true
 			},
 			{
-				href:' #/family-kids', 
+				href:' #/family-kids',
 				title:'Family/Kids',
-				openNewPage: false, 
+				openNewPage: false,
 				route:"family-kids",
 				"name": "family-kids",
 				moduleId:"./family-kids/family-kids",
@@ -128,21 +128,21 @@ export class ChicagoVeg {
 		"name": "restaurants",
 		moduleId: "./restaurants/restaurants",
 		title: "Restaurants",
-		nav: true, 
+		nav: true,
 		settings:{
 			subMenu:[
-			{ 
-				href:'http://restaurants.chicagoveg.com', 
+			{
+				href:'http://restaurants.chicagoveg.com',
 				title:'Restaurant Finder' ,
 				openNewPage: true
 			},
-			{ 
-				href:'http://www.meetup.com/ChicagoVeg/pages/ChicagoVeg_Choice_2015/', 
+			{
+				href:'http://www.meetup.com/ChicagoVeg/pages/ChicagoVeg_Choice_2015/',
 				title:'ChicagoVeg Choice',
 				openNewPage: true
-				
+
 			}]
-		}}, 
+		}},
 		{
 			route: "contact",
 			"name": "contact",
@@ -170,14 +170,14 @@ export class ChicagoVeg {
 			moduleId: "./outreach/outreach",
 			title: "Outreach",
 			nav: false
-		}, 		 		 
+		},
 		{
 			route: "cooking",
 			"name": "cooking",
 			moduleId: "./cooking/cooking",
 			title: "Cooking",
 			nav: false
-		}, 
+		},
 		{
 			route: "singles",
 			"name": "singles",
@@ -205,7 +205,7 @@ export class ChicagoVeg {
 			moduleId: "./classifications/classifications",
 			title: "Classifications",
 			nav: false
-		}	 	 			 			 			 		 			 		 		 			 			 			 		 			 		 
+		}
 		]);
 
 		this.router = router; //save router reference
