@@ -8,13 +8,15 @@ var config = {
   bundles: {
     "dist/app-build": {
       includes: [
-        '[*]',
+        '[*.js]',
         '*.html!text',
-        '*.css!text',
+        '*.css!text'
       ],
       options: {
-        inject: true,
-        minify: true
+        "inject": true,
+        "minify": true,
+        "depCache": true,
+        "rev": true
       }
     },
    "dist/vendor-build": {
@@ -43,8 +45,9 @@ var config = {
       "font-awesome"
     ],
       options: {
-        inject: true,
-        minify: true
+        "inject": true,
+        "minify": true,
+        "rev": true
       }
     }
   }
