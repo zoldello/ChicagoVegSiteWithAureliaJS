@@ -12,12 +12,13 @@ Demo site: http://www.chicagoveg.com/dev/new-main-site-staging/
 
 - Download the code locally by your favorite means. An example of a means is: https://zoldello.wordpress.com/2015/01/08/pulling-down-code-from-github/
 
-- Download JSPM dependencies: jspm install -y
+- Download JSPM dependencies: **jspm install -y**
 
 - To run locally, use a node server like "live-server" or "http-server". You can find them on npm
 
 ##Bundling
-- Run this command in a command line prompt: gulp bundle
+1. Run this command in a command line prompt: **gulp bundle** <br>
+  <i>Note: You may need to prefix this with "sudo" on linux</i>
 
-- If moving the code to a server, copy over the files changes you made if any, config.js file and dist (along with its content) over to the server 
+2. If moving the code to a server, **copy over the files changes you made if any**, **config.jsv file and **dist** (along with its content) over to the server 
 
