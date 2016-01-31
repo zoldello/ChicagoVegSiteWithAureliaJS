@@ -23,7 +23,7 @@ Demo site: http://www.chicagoveg.com/dev/new-main-site-staging/
 
 - To run locally, download these local servers from npm: "live-server" or "http-server". You can anyone one you like or even a handmade one if in the mood
 
-##Bundling
+##Bundling and Deployment
 
 **It is based on Aurelia.js' bundling system**
 
