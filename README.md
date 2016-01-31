@@ -27,10 +27,13 @@ Demo site: http://www.chicagoveg.com/dev/new-main-site-staging/
 
 **It is based on Aurelia.js' bundling system**
 
-1. Run this command in a command line prompt: **gulp bundle** <br>
+1. Run this command in a command line prompt to both bundle and minify the code: **gulp bundle** <br>
   <i>Note: You may need to prefix this with "sudo" on linux</i>
 
-2. If moving the code to a server, **copy over the files changes you made if any**, **config.jsv file and **dist** (along with its content) over to the server 
-
+2. If deploying to a server, copy these files to the server:
+  - dist folder
+  - config.js
+  - image folder
+  
 ##What is your licensing
 **Contact us about that. You can reach us at: http://www.chicagoveg.com/contact.htm**
