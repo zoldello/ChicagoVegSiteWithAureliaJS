@@ -4,7 +4,7 @@
 
 ChicagoVeg – Chicagoland Vegetarian, Vegan, & Raw Foodist Community is non-for-profit organization to support all vegans/vegetarians and educate the public about advantageous of a plant-based diet. Join us for delicious meals, share your favorite recipes, discuss living a healthy (vegetarian - vegan - raw food) lifestyle, support green movement, conscious living, and make new friends! We regularly meet in the city and suburbs for dining, picnics, lectures, movies, visiting local expos, and other events.
 
-##What is this code meant for?-
+##What is this code meant for?
 
 **ChiagoVeg New Homepage**
 
