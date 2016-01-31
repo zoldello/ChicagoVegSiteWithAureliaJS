@@ -73,7 +73,8 @@ System.config({
       "src/sponsors/sponsors.js",
       "src/statementBoxes/statementboxes.html!github:systemjs/plugin-text@0.0.4",
       "src/statementBoxes/statementboxes.js",
-      "src/util/requestAnimationFrame.js"
+      "src/util/requestAnimationFrame.js",
+      "styles/style.css!github:systemjs/plugin-text@0.0.4"
     ],
     "dist/vendor-build.js": [
       "github:components/jquery@2.2.0",

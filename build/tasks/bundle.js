@@ -18,7 +18,7 @@ var config = {
         '*.html!text'
       ],
       options: {
-        "inject": false,
+        "inject": true,
         "minify": true,
         "rev": false
       }
@@ -49,7 +49,7 @@ var config = {
       "font-awesome"
     ],
       options: {
-        "inject": false,
+        "inject": true,
         "minify": true,
         "rev": false
       }
