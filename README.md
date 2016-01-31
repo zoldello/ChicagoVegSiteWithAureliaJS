@@ -32,3 +32,5 @@ Demo site: http://www.chicagoveg.com/dev/new-main-site-staging/
 
 2. If moving the code to a server, **copy over the files changes you made if any**, **config.jsv file and **dist** (along with its content) over to the server 
 
+##What is your licensing
+**Contact us about that. You can reach us at: http://www.chicagoveg.com/contact.htm**
