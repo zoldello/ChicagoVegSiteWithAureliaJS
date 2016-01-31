@@ -40,4 +40,4 @@ Demo site: http://www.chicagoveg.com/dev/new-main-site-staging/
   - image folder
   
 ##What is your licensing
-**Contact us about that. You can reach us at: http://www.chicagoveg.com/contact.htm**
+**Contact us about that. You can reach us on: http://www.chicagoveg.com/contact.htm**
