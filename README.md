@@ -15,15 +15,15 @@ Demo site: http://www.chicagoveg.com/dev/new-main-site-staging/
 ##How do I install
 **Typical modern JavaScript Development setup**
 
-- Install supporting frameworks: node, npm, jspm and git. 
+1. Install supporting frameworks: node, npm, jspm and git. 
 
-- Download the code locally by your favorite means. An example of a means is: https://zoldello.wordpress.com/2015/01/08/pulling-down-code-from-github/
+2. Download the code locally by your favorite means. An example of a means is: https://zoldello.wordpress.com/2015/01/08/pulling-down-code-from-github/
 
-- Download npm dependencies: **npm install**
+3. Download npm dependencies: **npm install**
 
-- Download JSPM dependencies: **jspm install -y**
+4. Download JSPM dependencies: **jspm install -y**
 
-- To run locally, download these local servers from npm: "live-server" or "http-server". You can anyone one you like or even a handmade one if in the mood
+5. To run locally, download these local servers from npm: "live-server" or "http-server". You can anyone one you like or even a handmade one if in the mood
 
 ##Bundling and Deployment
 
