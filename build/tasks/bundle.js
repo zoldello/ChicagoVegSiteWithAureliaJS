@@ -8,16 +8,18 @@ var config = {
   bundles: {
     "dist/app-build": {
       includes: [
-        '[*]',
-        '*.html!text',
-        './src/**/*.html',
-        './src/**/*js',
-        '*.css!text'
+      '[*]',
+      '[*.js]',
+        '[./src/**/*.js]',
+        '[./src/*.js]',
+        './src/*.html!text',
+        './src/**/*.html!text',
+        './styles/*.css!text',
+        '*.html!text'
       ],
       options: {
         "inject": false,
         "minify": true,
-        "depCache": true,
         "rev": false
       }
     },
