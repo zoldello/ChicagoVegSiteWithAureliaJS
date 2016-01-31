@@ -27,10 +27,12 @@ Demo site: http://www.chicagoveg.com/dev/new-main-site-staging/
 
 **It is based on Aurelia.js' bundling system**
 
-1. Run this command in a command line prompt to both bundle and minify the code: **gulp bundle** <br>
+1. Install gulp via npm: **npm install --save-dev gulp**
+
+2. Run this command in a command line prompt to both bundle and minify code and markup: **gulp bundle** <br>
   <i>Note: You may need to prefix this with "sudo" on linux</i>
 
-2. If deploying to a server, copy these files to the server:
+3. If deploying to a server, copy these files to the server:
   - dist folder
   - config.js
   - image folder
