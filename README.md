@@ -1,4 +1,4 @@
-##Who we we?
+##Who are we?
 
 **We are ChicagoVeg**
 
