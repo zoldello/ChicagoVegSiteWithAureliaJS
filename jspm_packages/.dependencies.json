@@ -188,9 +188,6 @@
     "aurelia-metadata": "npm:aurelia-metadata@^1.0.0-beta.1",
     "aurelia-path": "npm:aurelia-path@^1.0.0-beta.1"
   },
-  "npm:bluebird@3.1.4": {
-    "process": "github:jspm/nodelibs-process@^0.1.0"
-  },
   "npm:jquery@2.2.0": {},
   "npm:clean-css@3.4.9": {
     "commander": "npm:commander@~2.8.0",
@@ -304,5 +301,8 @@
   },
   "npm:core-util-is@1.0.2": {
     "buffer": "github:jspm/nodelibs-buffer@^0.1.0"
+  },
+  "npm:bluebird@3.1.5": {
+    "process": "github:jspm/nodelibs-process@^0.1.0"
   }
 }

@@ -1,8 +1,8 @@
 System.config({
-  "baseURL": "./",
-  "defaultJSExtensions": true,
-  "transpiler": "babel",
-  "babelOptions": {
+  baseURL: "./",
+  defaultJSExtensions: true,
+  transpiler: "babel",
+  babelOptions: {
     "optional": [
       "runtime",
       "optimisation.modules.system",
@@ -10,11 +10,11 @@ System.config({
       "es7.classProperties"
     ]
   },
-  "paths": {
+  paths: {
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
-  "bundles": {
+  bundles: {
     "dist/app-build.js": [
       "config.js",
       "gulpfile.js",
@@ -1889,7 +1889,8 @@ System.config({
       "index.html!github:systemjs/plugin-text@0.0.4"
     ]
   },
-  "map": {
+
+  map: {
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0-beta.1.0.2",
     "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0-beta.1.0.2",
     "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.0.8",
@@ -1899,7 +1900,7 @@ System.config({
     "aurelia-templating-router": "npm:aurelia-templating-router@1.0.0-beta.1.0.5",
     "babel": "npm:babel-core@5.8.35",
     "babel-runtime": "npm:babel-runtime@5.8.35",
-    "bluebird": "npm:bluebird@3.1.4",
+    "bluebird": "npm:bluebird@3.1.5",
     "clean-css": "npm:clean-css@3.4.9",
     "core-js": "npm:core-js@1.2.6",
     "css": "github:systemjs/plugin-css@0.1.20",
@@ -2088,7 +2089,7 @@ System.config({
     "npm:babel-runtime@5.8.35": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:bluebird@3.1.4": {
+    "npm:bluebird@3.1.5": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:buffer@3.6.0": {
@@ -2196,4 +2197,4 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2"
     }
   }
-})
+});
