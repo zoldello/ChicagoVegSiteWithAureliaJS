@@ -38,6 +38,8 @@ Demo site: http://www.chicagoveg.com/dev/new-main-site-staging/
   - dist folder
   - config.js
   - image folder
+  - src folder
+  - style folder
   
 ##What is your licensing
 **Contact us about that. You can reach us on: http://www.chicagoveg.com/contact.htm**
