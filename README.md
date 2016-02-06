@@ -25,11 +25,18 @@ Demo site: http://www.chicagoveg.com/dev/new-main-site-staging/
 
 5. To run locally, download these local servers from npm: "live-server" or "http-server". You can anyone one you like or even a handmade one if in the mood
 
+##UnBundle
+
+1. To unbundle, run this command: **jspm unbundle**
+  
+This will unbundle and unminify the numerous files. It is good for development but not for deployment
+
 ##Bundling and Deployment
 
 **It is based on Aurelia.js' bundling system**
 
-1. Install gulp via npm: **npm install --save-dev gulp**
+
+1. Install gulp via npm IF NOT ALREADY DONE PRIOR: **npm install --save-dev gulp**
 
 2. Run this command in a command line prompt to both bundle and minify code and markup: **gulp bundle** <br>
   <i>Note: You may need to prefix this with "sudo" on linux</i>
