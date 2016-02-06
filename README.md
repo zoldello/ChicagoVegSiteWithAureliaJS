@@ -29,7 +29,7 @@ Demo site: http://www.chicagoveg.com/dev/new-main-site-staging/
 
 1. To unbundle, run this command: **jspm unbundle**
   
-This will unbundle and unminify the numerous files. It is good for development but not for deployment
+<i>This will unbundle and unminify the numerous files. It is good for development but not for deployment</i>
 
 ##Bundling and Deployment
 
