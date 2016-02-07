@@ -46,7 +46,11 @@ var config = {
       "babel",
       "core-js",
       "text",
-      "font-awesome"
+      "font-awesome",
+      "babel-runtime/helpers/create-class",
+      "babel-runtime/helpers/class-call-check",
+      "babel-runtime/helpers/create-decorated-class",
+      "babel-runtime/helpers/define-decorated-property-descriptor"
     ],
       options: {
         "inject": true,
