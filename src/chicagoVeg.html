@@ -1,6 +1,8 @@
-<template>    
+<template>
     <div class="backframe">
     <require from="./nav-bar/nav-bar"> </require>
+    <require from="twbs/bootstrap/css/bootstrap.css"></require>
+
     <header>
         <!-- Do not delete. This is used for providing facebook with an image  -->
         <div>
@@ -18,7 +20,7 @@
      </div>
       <div class="tab-content">
      <router-view></router-view>
-     </div> 
+     </div>
      </article>
 </section>
 <div><compose view-model="./sponsors/sponsors"></compose>

@@ -42,7 +42,10 @@ var config = {
       "bluebird",
       "jquery",
       "font-awesome",
+       "font-awesome/fonts/*.*!text",
       "twbs/bootstrap",
+      "twbs/bootstrap/css/bootstrap.css!text",
+     "twbs/bootstrap/font/*.*",
       "babel",
       "core-js",
       "text",
@@ -50,7 +53,9 @@ var config = {
       "babel-runtime/helpers/create-class",
       "babel-runtime/helpers/class-call-check",
       "babel-runtime/helpers/create-decorated-class",
-      "babel-runtime/helpers/define-decorated-property-descriptor"
+      "babel-runtime/helpers/define-decorated-property-descriptor",
+      "jspm_packages/npm/core-js@1.2.6/library/fn/object/define-property",
+
     ],
       options: {
         "inject": true,
