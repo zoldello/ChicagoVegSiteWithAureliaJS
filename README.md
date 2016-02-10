@@ -1,3 +1,6 @@
+This is a clone of the ChicagoVegSite with aurelia.js. Aurelia.js may be taken out, but I want to preserve this code for use in other projects. 
+
+
 ##Who are we?
 
 **We are ChicagoVeg**
@@ -6,7 +9,7 @@ ChicagoVeg – Chicagoland Vegetarian, Vegan, & Raw Foodist Community is non-for
 
 ##What is this code meant for?
 
-**ChiagoVeg New Homepage**
+**ChiagoVeg New Homepage**   
 
 This is the codebase for our new and forthcoming homepage redesign. It is in beta. You can see a demo of it at: 
 
