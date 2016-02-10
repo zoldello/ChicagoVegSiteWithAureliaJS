@@ -1,4 +1,4 @@
-This is a clone of the ChicagoVegSite with aurelia.js. Aurelia.js may be taken out, but I want to preserve this code for use in other projects. 
+This is a clone of the ChicagoVegSite with aurelia.js. Aurelia.js may be taken out of ChicagoVeg code base, so I cloned it to preserve this code, for use in future projects. 
 
 
 ##Who are we?
